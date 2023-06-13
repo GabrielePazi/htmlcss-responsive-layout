@@ -9,7 +9,9 @@
 }
 
 .container-m {
-    padding: 0px 2rem;
+    width: 90%;
+    margin: auto;
+    min-width: 320px;
 }
 
 section {
@@ -102,6 +104,20 @@ section {
     background-color: purple;
 }
 
+#cards-section {
+    background-color: brown;
+}
+
+.cards-row {
+    background-color: beige;
+    flex-direction: column;
+    height: 3000px;
+}
+
+.col-cards { 
+    background-color: rgb(216, 156, 78);
+}
+
 /* RESPONSIVE TABLET DIMENSION */
 @media screen and (min-width: 480px) {
 
@@ -110,11 +126,11 @@ section {
         flex-direction: row;
     }
 
-    .col-1-3 {
+    .jumbo-row .col-1-3 {
         flex-basis: calc((100% / 3) - var(--default-gap));
     }
     
-    .col-2-3 {
+    .jumbo-row .col-2-3 {
         flex-basis: calc(((100% / 3) * 2) - var(--default-gap));
     }
     
@@ -123,10 +139,25 @@ section {
         height: 250px;
         background-color: purple;
     }
+
+    .cards-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 1500px;
+    }
+
+    .cards-row .col-1-2 {
+        flex-basis: calc((100% / 2) - var(--default-gap));
+    }
 }
 
 /* RESPONSIVE DESKTOP DIMENSION */
 @media screen and (min-width: 992px) {
+
+    .container-m {
+        max-width: 920px;
+        width: 80%;
+    }
 
     .strategic-planning-row {
         flex-direction: row;
@@ -137,7 +168,15 @@ section {
         flex-basis: calc((100% / 2) - var(--default-gap));
     }
 
-    .container-s {
+    .container-xs {
         padding: 0px 5rem;
+    }
+
+    .cards-row {
+        height: 500px;
+    }
+
+    .cards-row .col-1-3 {
+        flex-basis: calc((100% / 3) - var(--default-gap));
     }
 }
