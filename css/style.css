@@ -133,14 +133,18 @@ section {
     flex-basis: calc((100% / 3) - var(--default-gap));
 }
 
-#free-trial-section {
-    background-color: rgb(151, 146, 228);
+.free-trial-content {
+    background-color: fuchsia;
     height: 500px;
 }
 
-.footer-container {
+footer {
     background-color: black;
-    height: 500px;
+}
+
+.footer-container {
+    background-color: grey;
+    height: 300px;
 }
 
 /* RESPONSIVE TABLET DIMENSION */
@@ -179,7 +183,18 @@ section {
         flex-direction: row;
         height: 500px;
     }
+
+    #free-trial-section .container-xs {
+        width: 70%;
+        margin: auto;
+    }
+
+    footer .container-xs {
+        width: 70%;
+        margin: auto;
+    }
 }
+
 
 /* RESPONSIVE DESKTOP DIMENSION */
 @media screen and (min-width: 992px) {
@@ -198,15 +213,16 @@ section {
         flex-basis: calc((100% / 2) - var(--default-gap));
     }
 
-    .container-xs {
-        padding: 0px 5rem;
-    }
-
     .cards-row {
         height: 500px;
     }
 
     .cards-row .col-1-3 {
         flex-basis: calc((100% / 3) - var(--default-gap));
+    }
+
+    .container-xxs {
+        width: 50%;
+        margin: auto;
     }
 }
