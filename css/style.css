@@ -8,8 +8,30 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container-m {
     width: 90%;
+    margin: auto;
+    min-width: 320px;
+}
+
+.container-s {
+    width: 80%;
+    margin: auto;
+    min-width: 320px;
+}
+
+.container-xs {
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+}
+
+.container-xxs {
+    width: 60%;
     margin: auto;
     min-width: 320px;
 }
@@ -31,24 +53,65 @@ section {
     border-radius: 15px;
 }
 
+.clr-white {
+    color: white;
+}
+
+.clr-primary-blu {
+    color: rgb(0, 132, 253);
+}
+
+.btn {
+    border:none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+}
+
 /*  HEADER  */
 
-.nav-container {
-    height: 50px;
+nav {
     background-color: rgb(0, 132, 253);
+    padding: 1rem;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
 }
 
 .nav-logo {
-    background-color: blue;
-    width: 100px;
+    display: flex;
+    align-items: center;
 }
 
-.nav-hamburger {
-    background-color: blue;
-    width: 100px;
+.nav-menu-right {
+    display: flex;
+    align-items: center;
 }
+
+.hamburger-menu {
+    font-size: 2rem;
+}
+
+.desktop-nav-menu {
+    display: none;
+}
+
+.desktop-nav-menu li {
+    display: inline;
+    padding: 0.5rem;
+}
+
+.desktop-nav-menu a {
+    text-decoration: none;
+}
+
+.nav-btn {
+    margin: 0px 0.5rem;
+    background-color: white;
+}
+
+/*  MAIN  */
 
 #jumbo-section {
     background-color: yellow;
@@ -74,6 +137,7 @@ section {
 }
 
 .strategic-planning-section-container {
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: var(--default-gap);
@@ -132,6 +196,7 @@ section {
 }
 
 .free-trial-container {
+    width: 90%;
     background-color: fuchsia;
     height: 500px;
 }
@@ -141,6 +206,7 @@ footer {
 }
 
 .footer-container {
+    width: 90%;
     background-color: grey;
     height: 300px;
 }
@@ -184,18 +250,25 @@ footer {
 
     #free-trial-section .container-s {
         width: 80%;
-        margin: auto;
     }
 
     footer .container-xs {
         width: 70%;
-        margin: auto;
     }
 }
 
 
 /* RESPONSIVE DESKTOP DIMENSION */
 @media screen and (min-width: 992px) {
+
+    .nav-menu-right .hamburger-menu {
+        display: none;
+    }
+
+    .desktop-nav-menu {
+        display: flex;
+        align-items: center;
+    }
 
     .container-m {
         max-width: 920px;
@@ -226,11 +299,9 @@ footer {
 
     #free-trial-section .container-xs {
         width: 70%;
-        margin: auto;
     }
 
     footer .container-xxs {
-        width: 50%;
-        margin: auto;
+        width: 60%;
     }
 }
