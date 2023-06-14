@@ -411,12 +411,17 @@ footer {
 
 .footer-container {
     width: 90%;
-    background-color: grey;
-    height: 300px;
+}
+
+footer p {
+    margin: auto;
+    max-width: 300px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* RESPONSIVE TABLET DIMENSION */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 580px) {
 
     .jumbo-row {
         flex-direction: row;
