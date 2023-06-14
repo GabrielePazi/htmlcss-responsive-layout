@@ -280,25 +280,43 @@ nav {
 }
 
 #cards-section {
-    background-color: brown;
+    background-color: rgb(151, 146, 228);
+    padding: 2rem 0rem;
+}
+
+.cards-section-text h2 {
+    padding-bottom: 2rem;
+}
+
+.cards-number {
+    font-size: 4rem;
+    color: rgb(151, 146, 228);
+    margin-bottom: 1rem;
 }
 
 .cards-row {
-    background-color: beige;
-    height: 3000px;
+    background-color: rgb(151, 146, 228);
 }
 
-.col-cards { 
-    background-color: rgb(216, 156, 78);
+.col-cards {
+    padding: 2rem;
+    background-color: white;
 }
 
-.about-us-row {
-    background-color: yellow;
-    height: 2000px;
+.col-cards h2 {
+    color: rgb(151, 146, 228);
+    margin-bottom: 1rem;
 }
 
-.about-us-col {
-    background-color: orange;
+.col-cards button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 30%;
+    background-color: rgb(151, 146, 228);
+}
+
+#about-us-section {
+    padding: 2rem 0rem;
 }
 
 .about-us-row .col-2-3 {
@@ -307,6 +325,46 @@ nav {
 
 .about-us-row .col-1-3 {
     flex-basis: calc((100% / 3) - var(--default-gap));
+}
+
+.about-us-col-text {
+    padding-top: 2rem;
+}
+
+.about-us-col-text h2 {
+    color: rgb(151, 146, 228);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-us-img {
+    width: 50%;
+    position: relative;
+}
+
+.about-us-img img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.about-us-img i{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 3.5rem;
+    color: rgb(151, 146, 228);
+}
+
+.about-us-content h3 {
+    color: rgb(151, 146, 228);
+    padding-bottom: 2rem;
+}
+
+.about-us-content button {
+    background-color: rgb(151, 146, 228);
+    margin-bottom: 2rem;
 }
 
 .free-trial-container {
@@ -367,7 +425,6 @@ footer {
     .cards-row {
         flex-direction: row;
         flex-wrap: wrap;
-        height: 1500px;
     }
 
     .cards-row .col-1-2 {
@@ -377,6 +434,10 @@ footer {
     .about-us-row {
         flex-direction: row;
         height: 500px;
+    }
+
+    .about-us-img {
+        width: 100%;
     }
 
     #free-trial-section .container-s {
@@ -410,7 +471,6 @@ footer {
         flex-direction: row;
     }
     
-
     .jumbo-col-img {
         display: flex;
         align-items: flex-end;
@@ -439,10 +499,6 @@ footer {
 
     .col-1-2 {
         flex-basis: calc((100% / 2) - var(--default-gap));
-    }
-
-    .cards-row {
-        height: 500px;
     }
 
     .cards-row .col-1-3 {
