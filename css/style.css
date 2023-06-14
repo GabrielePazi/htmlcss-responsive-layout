@@ -157,7 +157,11 @@ nav {
     margin-right: 25%;
 }
 
-.jumbo-col-2-3-text h2, p {
+.jumbo-col-2-3-text h2 {
+    padding-bottom: 1.5rem;
+}
+
+.jumbo-col-2-3-text p {
     padding-bottom: 1.5rem;
 }
 
@@ -367,10 +371,38 @@ nav {
     margin-bottom: 2rem;
 }
 
+#free-trial-section {
+    background-color: rgb(151, 146, 228);
+    padding: 2rem 0rem;
+    margin: 0;
+}
+
 .free-trial-container {
     width: 90%;
-    background-color: fuchsia;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--default-gap);
+}
+
+.free-trial-container h2 {
+    font-size: 3rem;
+    color: rgb(253, 193, 95);
+}
+
+.free-trial-container div {
+    color: rgb(213, 212, 244);
+}
+
+.free-trial-container p {
+    max-width: 400px;
+}
+
+.free-trial-button {
+    color: rgb(151, 146, 228);
+    border-radius: 25px;
+    padding: .9rem 3.5rem;
+    font-size: 1.2rem;
 }
 
 footer {
